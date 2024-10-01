@@ -35,31 +35,16 @@
 								<header id="header">
 									<!-- <a href="index.html" class="logo"><strong>Swathi Thokala</strong> </a> -->
 									<span class="image object" style="display: inline-block;">
-										<img src="images/About_pic.jpg" alt="About Me" style="width: 50%; max-width: 300px; height: auto;" />
+										<img src="images/About_pic.jpg" alt="About Me" style="width: 40vw; max-width: 300px; min-width: 150px; height: auto;" />
 									  </span>
 									  
 									  <style>
 										/* Default styles for the image */
 										.image img {
-										  width: 100%;
-										  max-width: 300px; /* Limits the image width on larger screens */
-										  height: auto;
-										}
-									  
-										/* Media query for tablets and smaller screens */
-										@media (max-width: 768px) {
-										  .image img {
-											width: 100%; /* Full width for smaller screens */
-											max-width: 250px; /* Slightly smaller limit for tablets */
-										  }
-										}
-									  
-										/* Media query for mobile screens */
-										@media (max-width: 480px) {
-										  .image img {
-											width: 100%;
-											max-width: 180px; /* Ensures image is not too small */
-										  }
+										  width: 40vw; /* Scales the image based on viewport width */
+										  max-width: 300px; /* Restricts the image from growing too large on wide screens */
+										  min-width: 150px; /* Prevents the image from shrinking too much on small screens */
+										  height: auto; /* Maintains the aspect ratio */
 										}
 									  </style>
 									  
