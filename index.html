@@ -38,6 +38,29 @@
 										<img src="images/About_pic.jpg" alt="About Me" style="max-width: 30%; height: auto;" />
 									  </span>
 									  
+									  <style>
+										/* Default styles */
+										.image img {
+										  max-width: 100%;
+										  height: auto;
+										}
+									  
+										/* Media query for tablets and smaller screens */
+										@media (max-width: 768px) {
+										  .image img {
+											width: 80px; /* Smaller image for tablets */
+										  }
+										}
+									  
+										/* Media query for mobile screens */
+										@media (max-width: 480px) {
+										  .image img {
+											width: 60px; /* Even smaller for mobile */
+										  }
+										}
+									  </style>
+									  
+									  
 									<div style="display: flex; justify-content: flex-end; align-items: center; gap: 15px;">
 										<ul class="icons" style="display: flex; gap: 15px; margin: 0; padding: 0; list-style: none;">
 											<li><a href="https://www.linkedin.com/in/swathithokala1408/" target="_blank"class="icon brands fa-linkedin" style="font-size: 20px;"><span class="label">LinkedIn</span></a></li>
