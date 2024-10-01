@@ -55,9 +55,34 @@
 											<li><a href="https://github.com/Swathi-Reddy1408" target="_blank" class="icon brands fa-github"style="font-size: 20px;"><span class="label">GitHub</span></a></li>
 											<li><a href="https://medium.com/@swathireddythokala16" target="_blank"class="icon brands fa-medium-m"style="font-size: 20px;"><span class="label">Medium</span></a></li>
 										</ul>
-										<a href="assets/Swathi_Thokala_CV.pdf" class="button big" download="Swathi_Thokala_Resume.pdf" target="_blank">Download Resume</a>
-										<a href="https://forms.gle/QkUhRhfhuVqHYck3A" class="button big" target="_blank">Hire Me</a>
-									</div>
+										<div style="display: flex; gap: 10px; margin-top: 10px;">
+											<a href="assets/Swathi_Thokala_CV.pdf" class="button big" download="Swathi_Thokala_Resume.pdf" target="_blank">Download Resume</a>
+											<a href="mailto:tswathireddy16@gmail.com" class="button big" target="_blank">Hire Me</a>
+										  </div>
+										</div>
+										
+										<style>
+										  /* Mobile responsive styling */
+										  @media (max-width: 768px) {
+											div[style*="display: flex"] {
+											  flex-direction: column; /* Stack icons and buttons vertically */
+											  align-items: flex-end; /* Align items to the right */
+											}
+										
+											div[style*="display: flex; gap: 10px;"] {
+											  margin-top: 10px; /* Add spacing between buttons */
+											  width: 100%; /* Make buttons full-width */
+											  justify-content: center; /* Center buttons on mobile */
+											}
+										
+											/* Optional: Button styling for full width */
+											.button {
+											  width: 100%; /* Make buttons full-width on mobile */
+											  text-align: center; /* Center text in buttons */
+											  padding: 0.8em; /* Adjust padding for mobile */
+											}
+										  }
+										</style>
 									
 									
 								</header>
