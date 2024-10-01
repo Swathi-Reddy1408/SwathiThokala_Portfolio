@@ -32,61 +32,51 @@
 						<div class="inner">
 
 							<!-- Header -->
-								<header id="header">
-									<!-- <a href="index.html" class="logo"><strong>Swathi Thokala</strong> </a> -->
+							<header id="header" style="position: relative; display: flex; justify-content: center; align-items: flex-start;">
+								<div style="text-align: center;">
 									<span class="image object" style="display: inline-block;">
-										<img src="images/About_pic.jpg" alt="About Me" style="width: 40vw; max-width: 300px; min-width: 150px; height: auto;" />
-									  </span>
-									  
-									  <style>
-										/* Default styles for the image */
+										<img src="images/About_pic.jpg" alt="About Me" style="width: 100%; max-width: 300px; height: auto;" />
+									</span>
+								</div>
+							
+								<div style="position: absolute; top: 10px; right: 20px; display: flex; flex-direction: column; gap: 10px;">
+									<ul class="icons" style="display: flex; gap: 15px; margin: 0; padding: 0; list-style: none;">
+										<li><a href="https://www.linkedin.com/in/swathithokala1408/" target="_blank" class="icon brands fa-linkedin" style="font-size: 25px; margin-right: 25px;"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/Swathi-Reddy1408" target="_blank" class="icon brands fa-github" style="font-size: 25px; margin-right: 25px;"><span class="label">GitHub</span></a></li>
+										<li><a href="https://medium.com/@swathireddythokala16" target="_blank" class="icon brands fa-medium-m" style="font-size: 25px; margin-right: 25px;"><span class="label">Medium</span></a></li>
+									</ul>
+									<div>
+										<a href="assets/Swathi_Thokala_CV.pdf" class="button big" download="Swathi_Thokala_Resume.pdf" target="_blank">Download Resume</a>
+										<a href="https://forms.gle/QkUhRhfhuVqHYck3A" class="button big" target="_blank">Hire Me</a>
+									</div>
+								</div>
+							
+								<style>
+									/* Default styles for the image */
+									.image img {
+										width: 100%;
+										max-width: 300px; /* Limits the image width on larger screens */
+										height: auto;
+									}
+							
+									/* Media query for tablets and smaller screens */
+									@media (max-width: 768px) {
 										.image img {
-										  width: 40vw; /* Scales the image based on viewport width */
-										  max-width: 300px; /* Restricts the image from growing too large on wide screens */
-										  min-width: 150px; /* Prevents the image from shrinking too much on small screens */
-										  height: auto; /* Maintains the aspect ratio */
+											width: 100%; /* Full width for smaller screens */
+											max-width: 250px; /* Slightly smaller limit for tablets */
 										}
-									  </style>
-									  
-									  
-									<div style="display: flex; justify-content: flex-end; align-items: center; gap: 15px;">
-										<ul class="icons" style="display: flex; gap: 15px; margin: 0; padding: 0; list-style: none;">
-											<li><a href="https://www.linkedin.com/in/swathithokala1408/" target="_blank"class="icon brands fa-linkedin" style="font-size: 20px;"><span class="label">LinkedIn</span></a></li>
-											<li><a href="https://github.com/Swathi-Reddy1408" target="_blank" class="icon brands fa-github"style="font-size: 20px;"><span class="label">GitHub</span></a></li>
-											<li><a href="https://medium.com/@swathireddythokala16" target="_blank"class="icon brands fa-medium-m"style="font-size: 20px;"><span class="label">Medium</span></a></li>
-										</ul>
-										<div style="display: flex; gap: 10px; margin-top: 10px;">
-											<a href="assets/Swathi_Thokala_CV.pdf" class="button big" download="Swathi_Thokala_Resume.pdf" target="_blank">Download Resume</a>
-											<a href="mailto:tswathireddy16@gmail.com" class="button big" target="_blank">Hire Me</a>
-										  </div>
-										</div>
-										
-										<style>
-										  /* Mobile responsive styling */
-										  @media (max-width: 768px) {
-											div[style*="display: flex"] {
-											  flex-direction: column; /* Stack icons and buttons vertically */
-											  align-items: flex-end; /* Align items to the right */
-											}
-										
-											div[style*="display: flex; gap: 10px;"] {
-											  margin-top: 10px; /* Add spacing between buttons */
-											  width: 100%; /* Make buttons full-width */
-											  justify-content: center; /* Center buttons on mobile */
-											}
-										
-											/* Optional: Button styling for full width */
-											.button {
-											  width: 100%; /* Make buttons full-width on mobile */
-											  text-align: center; /* Center text in buttons */
-											  padding: 0.8em; /* Adjust padding for mobile */
-											}
-										  }
-										</style>
-									
-									
-								</header>
-
+									}
+							
+									/* Media query for mobile screens */
+									@media (max-width: 480px) {
+										.image img {
+											width: 100%;
+											max-width: 180px; /* Ensures image is not too small */
+										}
+									}
+								</style>
+							</header>
+							
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
