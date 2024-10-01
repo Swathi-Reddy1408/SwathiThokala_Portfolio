@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+
 
 		<style>
 			/* Add smooth scrolling */
@@ -38,8 +40,8 @@
 											<li><a href="https://github.com/Swathi-Reddy1408" target="_blank" class="icon brands fa-github"style="font-size: 20px;"><span class="label">GitHub</span></a></li>
 											<li><a href="https://medium.com/@swathireddythokala16" target="_blank"class="icon brands fa-medium-m"style="font-size: 20px;"><span class="label">Medium</span></a></li>
 										</ul>
-										<a href="your-resume-link.pdf" class="button big" download>Download Resume</a>
-										<a href="your-hire-me-link.pdf" class="button big" download>Hire Me</a>
+										<a href="assets/Swathi_Thokala_CV.pdf" class="button big" download="Swathi_Thokala_Resume.pdf" target="_blank">Download Resume</a>
+										<a href="https://forms.gle/QkUhRhfhuVqHYck3A" class="button big" target="_blank">Hire Me</a>
 									</div>
 									
 									
@@ -51,8 +53,61 @@
 										<header>
 											<h1>Hi, I’m Swathi Thokala<br />
 											</h1>
-											<p>Software Engineer, Data/AI Enthusiast, Medium Blogger</p>
+											<!-- <p>Software Engineer, Data/AI Enthusiast, Medium Blogger</p> -->
+											<span id="typing-animation"></span>
+<style>
+	#typing-animation {
+	  font-size: 2em; /* Increases the font size */
+	  font-weight: bold; /* Makes the text bold */
+	  color: #f76c6c; /* Change the text color (highlight) */
+	  background-color: #ffe6e6; /* Adds a light background color to highlight */
+	  padding: 5px 10px; /* Adds padding around the text */
+	  border-radius: 5px; /* Rounds the corners of the background */
+	}
+  </style>
+
+<script>
+  // Initialize the typing animation
+  const typingAnimationElement = document.getElementById('typing-animation');
+
+  // Create an array of typing text
+  const typingTexts = [
+    'Software Engineer ',
+    
+	'Data / AI Enthusiast',
+	'Medium Blogger '
+
+  ];
+
+  let textIndex = 0; // Keeps track of the current text in typingTexts
+  let charIndex = 0; // Keeps track of the character being typed
+
+  // Create a function to display the typing animation for a given text
+  function playTypingAnimation() {
+    // Check if we've reached the end of the current text
+    if (charIndex < typingTexts[textIndex].length) {
+      // Add the current character to the element
+      typingAnimationElement.textContent += typingTexts[textIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(playTypingAnimation, 50); // Continue typing with a delay of 200ms per character
+    } else {
+      // After finishing typing, wait a moment and then erase the text
+      setTimeout(() => {
+        typingAnimationElement.textContent = ''; // Clear the text
+        charIndex = 0; // Reset the character index
+        textIndex = (textIndex + 1) % typingTexts.length; // Move to the next text (loop back if needed)
+        setTimeout(playTypingAnimation, 500); // Start typing the next text after a small delay
+      }, 1000); // Keep the typed text visible for 1 second before erasing it
+    }
+  }
+
+  // Start the typing animation loop
+  playTypingAnimation();
+</script>
 										</header>
+										<!-- Element to contain animated typing -->
+                                       <br>
+
 										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
 											<ul class="actions">
 											<li><a href="#" class="button big">Learn More</a></li>
@@ -107,8 +162,8 @@
 									<header class="major">
 										<h2>Projects</h2>
 									</header>
-									<div class="posts" style="display: flex; flex-wrap: wrap; gap: 20px;">
-										<article style="flex-basis: 30%; flex-grow: 1;">
+									<div class="posts">
+										<article>
 											<a href="https://public.tableau.com/app/profile/swathi.thokala/viz/YoutubeTrendAnalysis_17200503287820/Dashboard1" class="image">
 												<img src="images/pic01.png" alt="" style="width: 100%;" />
 											</a>
@@ -120,7 +175,7 @@
 											</ul>
 										</article>
 									
-										<article style="flex-basis: 30%; flex-grow: 1;">
+										<article>
 											<a href="#" class="image">
 												<img src="images/pic02.png" alt="" style="width: 100%;" />
 											</a>
@@ -131,9 +186,9 @@
 											</ul>
 										</article>
 									
-										<article style="flex-basis: 30%; flex-grow: 1;">
+										<article>
 											<a href="#" class="image">
-												<img src="images/pic03.png" alt="" style="width: 100%;" />
+												<img src="images/pic03.jpg" alt="" style="width: 100%;" />
 											</a>
 											<h3 style="color: rgb(247, 76, 76);">Third Project Title</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
@@ -263,6 +318,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="js/jquery.animateNumber.min.js"></script>
+
 
 	</body>
 </html>
